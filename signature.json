@@ -2,7 +2,17 @@
   "TheAside": {
     "description": "Aside of the-component",
     "displayName": "TheAside",
-    "methods": []
+    "methods": [
+      {
+        "name": "Container",
+        "docblock": null,
+        "modifiers": [
+          "static"
+        ],
+        "params": [],
+        "returns": null
+      }
+    ]
   },
   "TheAsideStyle": {
     "description": "Style for TheAside",

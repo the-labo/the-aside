@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import c from 'classnames'
 import TheAsideStyle from './TheAsideStyle'
 import { htmlAttributesFor, eventHandlersFor } from 'the-component-util'
+import { TheContainer } from 'the-container'
 
 /**
  * Aside of the-component
@@ -24,6 +25,28 @@ class TheAside extends React.Component {
       >
         {children}
       </aside>
+    )
+  }
+
+  static For ({
+                className,
+                children
+              }) {
+    return (
+      <div className={c('the-aside-for', className)}>
+        {children}
+      </div>
+    )
+  }
+
+  static Container ({
+                      className,
+                      children
+                    }) {
+    return (
+      <TheContainer className={c('the-aside-container', className)}>
+        {children}
+      </TheContainer>
     )
   }
 }
