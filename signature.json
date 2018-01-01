@@ -1,0 +1,25 @@
+{
+  "TheAside": {
+    "description": "Aside of the-component",
+    "displayName": "TheAside",
+    "methods": []
+  },
+  "TheAsideStyle": {
+    "description": "Style for TheAside",
+    "displayName": "TheAsideStyle",
+    "methods": [],
+    "props": {
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Style options",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  }
+}
