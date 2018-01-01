@@ -1,7 +1,7 @@
 /**
  * Aside of the-component
  * @module the-aside
- * @version 1.1.0
+ * @version 1.1.1
  */
 'use strict'
 

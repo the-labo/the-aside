@@ -32,13 +32,17 @@ TheAsideStyle.data = (options) => {
   return Object.assign({},
     asStyleData('.the-aside', {
       '&': {
-        display: 'block'
+        display: 'block',
+        flexGrow: 1,
+        width: '216px',
+        minHeight: 1
       }
     }),
     asStyleData('.the-aside-for', {
       '&': {
         display: 'block',
-        flexGrow: 1
+        flexGrow: 4,
+        minWidth: '280px'
       }
     }),
     asStyleData('.the-aside-container', {
