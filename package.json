@@ -1,6 +1,6 @@
 {
   "name": "the-aside",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Aside of the-component",
   "main": "shim",
   "scripts": {
