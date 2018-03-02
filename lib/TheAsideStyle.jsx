@@ -35,7 +35,8 @@ TheAsideStyle.data = (options) => {
         display: 'block',
         flexGrow: 1,
         width: '216px',
-        minHeight: 1
+        minHeight: 1,
+        flexShrink: 0
       }
     }),
     asStyleData('.the-aside-for', {
