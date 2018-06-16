@@ -1,36 +1,30 @@
 'use strict'
 
-import React from 'react'
-import PropTypes from 'prop-types'
 import c from 'classnames'
-import TheAsideStyle from './TheAsideStyle'
-import { htmlAttributesFor, eventHandlersFor } from 'the-component-util'
+import PropTypes from 'prop-types'
+import React from 'react'
+import { eventHandlersFor, htmlAttributesFor } from 'the-component-util'
 import { TheContainer } from 'the-container'
+import TheAsideStyle from './TheAsideStyle'
 
 /**
  * Aside of the-component
  */
 class TheAside extends React.Component {
-  render () {
-    const s = this
-    const {props} = s
-    const {
-      className,
-      children
-    } = props
+  static Container ({
+                      children,
+                      className,
+                    }) {
     return (
-      <aside {...htmlAttributesFor(props, {except: ['className']})}
-             {...eventHandlersFor(props, {except: []})}
-             className={c('the-aside', className)}
-      >
+      <TheContainer className={c('the-aside-container', className)}>
         {children}
-      </aside>
+      </TheContainer>
     )
   }
 
   static For ({
+                children,
                 className,
-                children
               }) {
     return (
       <div className={c('the-aside-for', className)}>
@@ -39,14 +33,20 @@ class TheAside extends React.Component {
     )
   }
 
-  static Container ({
-                      className,
-                      children
-                    }) {
+  render () {
+    const s = this
+    const {props} = s
+    const {
+      children,
+      className,
+    } = props
     return (
-      <TheContainer className={c('the-aside-container', className)}>
+      <aside {...htmlAttributesFor(props, {except: ['className']})}
+             {...eventHandlersFor(props, {except: []})}
+             className={c('the-aside', className)}
+      >
         {children}
-      </TheContainer>
+      </aside>
     )
   }
 }

@@ -4,20 +4,6 @@
     "displayName": "TheAside",
     "methods": [
       {
-        "name": "For",
-        "docblock": null,
-        "modifiers": [
-          "static"
-        ],
-        "params": [
-          {
-            "name": "{\n              className,\n              children\n            }",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
         "name": "Container",
         "docblock": null,
         "modifiers": [
@@ -25,7 +11,21 @@
         ],
         "params": [
           {
-            "name": "{\n                    className,\n                    children\n                  }",
+            "name": "{\n                    children,\n                    className,\n                  }",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "For",
+        "docblock": null,
+        "modifiers": [
+          "static"
+        ],
+        "params": [
+          {
+            "name": "{\n              children,\n              className,\n            }",
             "type": null
           }
         ],
