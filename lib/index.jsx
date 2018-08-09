@@ -9,7 +9,6 @@ import TheAside from './TheAside'
 import TheAsideStyle from './TheAsideStyle'
 
 export {
-  TheAside,
-  TheAsideStyle,
+ TheAside,
+ TheAsideStyle,
 }
-
