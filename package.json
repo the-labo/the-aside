@@ -13,7 +13,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2",
-    "the-component-util": "^3.0.11",
+    "the-component-util": "^3.0.12",
     "the-container": "^3.0.9",
     "the-style": "^2.2.2"
   },
