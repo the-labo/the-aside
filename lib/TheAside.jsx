@@ -1,7 +1,6 @@
 'use strict'
 
 import c from 'classnames'
-import PropTypes from 'prop-types'
 import React from 'react'
 import { eventHandlersFor, htmlAttributesFor } from 'the-component-util'
 import { TheContainer } from 'the-container'
@@ -34,8 +33,7 @@ class TheAside extends React.Component {
   }
 
   render () {
-    const s = this
-    const {props} = s
+    const {props} = this
     const {
       children,
       className,
